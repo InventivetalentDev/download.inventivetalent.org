@@ -151,7 +151,9 @@ downloadApp.controller("downloadController", ["$scope", "$location", "$routePara
             if (response.status === 200 && "true" === response.data) {
                 $scope.patreonLoggedIn = true;
                 $scope.trackDownloadClick("patreon-auto");
-                window.location = $scope.download.direct();
+                $timeout(function () {
+                    window.location = $scope.download.url.direct();
+                }, 250);
             } else {
                 $scope.patreonLoggedIn = false;
             }
