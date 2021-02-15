@@ -10,7 +10,7 @@
         font-size: 20px;
     }
 
-    iframe.patreon-widget{
+    iframe.patreon-widget {
         width: 175px !important;
         margin-bottom: 10px;
     }
@@ -63,7 +63,10 @@
                     <div class="btn-choice-wrapper">
                         <div id="patreon-container" ng-hide="patreonLoggedIn">
                             <!-- Patreon -->
+
                             <a href="https://www.patreon.com/bePatron?u=554075" data-patreon-widget-type="become-patron-button">Become a Patron!</a>
+                            <script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+
                             Already a Patron? <a href="/patreon/redirect.php" target="_self" id="patreon-login-link">Log In!</a>
                             <br/>
                             <br/>
@@ -120,5 +123,3 @@
         </div>
     </div>
 </div>
-
-<script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
