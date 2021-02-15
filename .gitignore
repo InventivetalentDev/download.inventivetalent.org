@@ -1,3 +1,5 @@
 *.iml
 .idea
 patreon/*
+external/*/make.php
+*_log
